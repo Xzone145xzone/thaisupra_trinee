@@ -8,8 +8,8 @@
         <meta name="author" content="" />
         <title>Thaisupra - PA</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
+        <link href="/public/assets/css/styles.css" rel="stylesheet">
+        <link href="/public/assets/assets/css/app.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
