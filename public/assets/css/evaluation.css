@@ -1,0 +1,51 @@
+.table_evaluation{
+  
+    width: 95%;
+    margin: 0 auto;
+}
+
+.table_evaluation td{
+    text-align: center;
+    height: 85px;
+    background-color: #BCDBA2;
+    border: 1px solid white;
+/*    vertical-align: top;*/
+}
+
+/*.tr_header_blue{
+    padding: 0.2em;
+}*/
+
+
+.tr_header_blue th{
+     text-align: center;
+    background-color:#1050A2;
+    color:white;
+    
+}
+
+
+.tr_header_green{
+    background-color: #5EB11A;
+    color:white;
+    padding: 0.5em;
+   
+}
+
+.tr_header_green th{
+     text-align: center;
+     vertical-align: top;
+     padding: 0.5em;
+}
+
+
+.td_hover{
+    font-size: 25pt;
+    padding: 1.5em;
+   
+}
+
+.td_hover:hover{
+    background-color:#40E0D0;
+ 
+}
