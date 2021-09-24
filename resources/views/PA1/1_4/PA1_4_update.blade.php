@@ -23,23 +23,18 @@
 
         <div class="row" id="block">
 
-    <table style="width: 100%;" border="0">
-                <tr style="height: 70px;">
-                    <td style="width: 50%;">
-                    </td>
-                    <td style="text-align:right;width: 50%;">
-                        <a class="btn_page" onclick="add_train_edit();" ><span class="fa fa-plus"></span> เพิ่มประวัติการอบรม</a>
-                    </td>
-                </tr>
-            </table>  
+            <div style="width: 100%;text-align: right;margin:1em;">
+                  <a class="btn_page" onclick="add_train_edit();" ><span class="fa fa-plus"></span> เพิ่มประวัติการอบรม</a>
+            </div> 
+             <div class="table-responsive">
              <table class="table_green" id='tbl_train'>
                    <tr class="tr_header">                   
-                    <th style="width:30%;">หัวข้อในการอบรม</th>
+                    <th style="width:25%;">หัวข้อในการอบรม</th>
                     <th style="width:15%;">วันเริ่มต้น</th>
                     <th style="width:15%;">วันสิ้นสุด</th> 
                     <th style="width:10%;">จำนวนชั่วโมง</th>
                     <th style="width:20%;">หน่วยงานที่จัด</th> 
-                    <th style="width:10%;"></th> 
+                    <th style="width:20%;"></th> 
                 </tr>
                    <?php
                 $i = 0;
@@ -60,7 +55,7 @@
                          <input type="date" class="form-control" id="txtstart_date" name="txtstart_date[{{$i}}]" style="text-align: center;" value="{{$trains->start_date}}" onchange="update_train_field({{$trains->id}},{{$i}}, 'start_date');" required>
                      </div>
                      <div id="text_start_date_{{$i}}" style="width:100%;text-align: center;" onclick="show_ele('start_date_{{$i}}');">
-                            {{thaidate($trains->start_date)}}
+                            {{datethai($trains->start_date)}}
                      </div>           
                   </td>
                     <td>
@@ -68,7 +63,7 @@
                          <input type="date" class="form-control" id="txtend_date" name="txtend_date[{{$i}}]" style="text-align: center;" value="{{$trains->start_date}}" onchange="update_train_field({{$trains->id}},{{$i}}, 'end_date');" required>
                      </div>
                      <div id="text_end_date_{{$i}}" style="width:100%;text-align: center;" onclick="show_ele('end_date_{{$i}}');">
-                            {{thaidate($trains->end_date)}}
+                            {{datethai($trains->end_date)}}
                      </div>           
                   </td>
                   <td>
@@ -94,7 +89,7 @@
                 ?>
                   @endforeach
               </table>
-
+             </div>
     </div>
     </div>
 

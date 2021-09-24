@@ -9,28 +9,7 @@
 
 <style>
 
-    .sortable{
-        list-style: none;
-    }
-
-    .sortable li{
-        padding:1em;
-        margin:10px;
-    }
-
-    .ui-state-default{
-        padding: 0em;
-        height:auto; 
-    }
-    
-   .table_green td{
-        vertical-align: top;
-    }
-    
-    .text_center{
-        text-align: center;
-    }
-
+   
 </style>
 
 <div class="container-fluid" style="padding-bottom:100px;">
@@ -55,15 +34,15 @@
             <br><br>
             <span class="blue_small"><b>ความต้องการและคำรับรองในการพัฒนาตนเองและวิชาชีพของผู้จัดทำแผนพัฒนาตนเอง หลักสูตรที่ควรจะได้รับการพัฒนาตนเองและวิชาชีพ</b></span>
             <br><br>
-            
+            <div class="table-responsive">
             <table border="1" class="table_green" style="margin: 0 auto;">
                 <tr class="tr_header">
                     <th style="width:5%;">ลำดับ</th>
-                    <th style="width:20%;text-align: center;">มาตรฐานตำแหน่งที่จะพัฒนา</th>
+                    <th style="width:25%;text-align: center;">มาตรฐานตำแหน่งที่จะพัฒนา</th>
                     <th style="text-align: center;width:10%;">เริ่มต้น</th>
                     <th style="text-align: center;width:10%;">สิ้นสุด</th>
-                    <th style="text-align: center;width:10%;">การของบประมาณ</th>
-                    <th style="text-align: center;width:40%;">ประโยชน์ที่คาดว่าจะได้รับ</th>
+                    <th style="text-align: center;width:15%;">การของบประมาณ</th>
+                    <th style="text-align: center;width:30%;">ประโยชน์ที่คาดว่าจะได้รับ</th>
                     <th style="width:5%;"></th> 
                 </tr>  
                 <?php $i=1; ?>
@@ -81,22 +60,18 @@
                 @endforeach 
                 @else 
                 <tr style="height:40px;">
-                    <td></td>  
-                    <td></td>   
-                    <td></td>  
-                    <td></td>  
-                    <td></td>  
-                    <td></td>  
-                     <td></td> 
+                    <td colspan="7" style="text-align:center;">กรุณาเพิ่มข้อมูล</td>  
+        
                 </tr>
                 @endif
             </table>
+            </div>
         </div>
       
         <form method="post" action="{{url('PA2_Insert_Development')}}">
             @csrf 
             <div class="row" id="block">
-
+ 
                 <ul class="sortable" id="sortable">
                     <li class="ui-state-default">                    
 
@@ -106,7 +81,7 @@
                                 <label>มาตรฐานตำแหน่งที่จะพัฒนา</label>
                             </div>
                             <div class="col col-lg-6 col-md-6 col-sm-12">
-                                <select class="form-control" id="txtstandard" name="txtstandard">
+                                <select class="form-control" id="txtstandard" name="txtstandard" required>
                                      @foreach($standard as $standards)
                                       <option value="{{$standards->id}}">{{$standards->detail}}</option>
                                      @endforeach
@@ -121,9 +96,9 @@
                             <div class="col col-lg-6 col-md-6 col-sm-12">
                                 <table border="0">
                                     <tr>
-                                        <td><b>เริ่มต้น</b> <input type="date" id="txtstart_date" name="txtstart_date" class="form-control"></td>
+                                        <td><b>เริ่มต้น</b> <input type="date" id="txtstart_date" name="txtstart_date" class="form-control" required> </td>
                                         <td>-</td>
-                                        <td><b>สิ้นสุด</b> <input type="date" id="txtend_date" name="txtend_date" class="form-control"></td>
+                                        <td><b>สิ้นสุด</b> <input type="date" id="txtend_date" name="txtend_date" class="form-control" required></td>
                                     </tr>
                                 </table>
                             </div>
@@ -133,7 +108,7 @@
                                 <span class="ui-icon ui-icon-arrowthick-2-n-s"></span><label>การของบประมาณ</label>
                             </div>
                             <div class="col col-lg-6 col-md-6 col-sm-12">
-                                <input type="text" id="txtbudget" name="txtbudget" class="form-control">
+                                <input type="text" id="txtbudget" name="txtbudget" class="form-control" required>
                             </div>
                         </div>
                         <div class="row">
@@ -141,30 +116,23 @@
                                 <span class="ui-icon ui-icon-arrowthick-2-n-s"></span><label>ประโยชน์ที่คาดว่าจะได้รับ</label>
                             </div>
                             <div class="col col-lg-6 col-md-6 col-sm-12">
-                                <textarea class="form-control" id="txtbenefit" name="txtbenefit"></textarea>
+                                <textarea class="form-control" id="txtbenefit" name="txtbenefit" style="height:100px;" required></textarea>
                             </div>
                         </div>
                     </li>
                 </ul>
 
                 <center>
-                    <button class="btn btn-success" type="submit"><li style="margin-right:10px;font-size: 18pt;" class="fa fa-arrow-circle-right "></li> เพิ่ม</button> 
+                    <button class="btn btn-success" type="submit" style="height:50px;">
+                        <li style="margin-right:5px;" class="fa fa-arrow-circle-right "></li> 
+                        เพิ่ม
+                    </button> 
+                  
+                       <a class="btn_blue" href="{{url('PA2_3')}}"><li class="fa fa-arrow-circle-right "></li> ไปยังขั้นตอนถัดไป</a> 
+                 
                 </center>
             </div>
         </form>
-
-
-<!--        <div class="row" id="block">
-            <div class="col col-lg-12 col-md-12 col-sm-12">
-                <label>ความต้องการและคำรับรองในการพัฒนาตนเองและวิชาชีพของผู้จัดทำแผนพัฒนาตนเอง หลักสูตรที่ควรจะได้รับการพัฒนาตนเองและวิชาชีพ  ส่วนที่.....</label>
-                <textarea id="txtresult" name="txtresult"></textarea>
-            </div>
-            <div class="col col-lg-12 col-md-12 col-sm-12">
-                <label>หลักสูตรที่ควรจะได้รับการพัฒนาตนเองและวิชาชีพ</label>
-                <textarea id="txtresult" name="txtresult"></textarea>
-            </div>
-        </div>-->
-
     </div>
 
 

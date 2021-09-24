@@ -24,10 +24,8 @@ class AuthController extends Controller {
     
     public function logout() {
 
-        
        Session::flush();
        return redirect('login');
-       // return view("login");
     }
     
 
@@ -39,10 +37,7 @@ class AuthController extends Controller {
         ]);
 
         $user = json_decode($response, true);
-       // echo $user["success"];
-        
-       // 0cho $response;
-        //echo $response->json("success");
+
           if ($user["success"] == true) {
 
             $user = json_decode($response, true);
@@ -54,10 +49,10 @@ class AuthController extends Controller {
             session(['uAddress' => $user["user"]["docaddress"]]);
 
 
-            self::Pa(session('uID'));
+            //self::Pa(session('uID'));
             return redirect('PA1_1');
         } else {
-            //return view("login");
+
             return redirect('login');
         }
     }
@@ -81,7 +76,7 @@ class AuthController extends Controller {
             session(['uAddress' => $user["user"]["docaddress"]]);
 
 
-            self::Pa(session('uID'));
+            //self::Pa(session('uID'));
             return redirect('PA1_1');
         } else {
             //return view("login");
@@ -89,27 +84,27 @@ class AuthController extends Controller {
         }
     }
 
-    public function Pa($uID) {
-
-        $year = DB::table('PA')
-                ->where('PA_year', PA_year())
-                ->where('user_id', $uID)
-                ->get();
-
-        if ($year->count()<=0) {
-
-            DB::table('pa')->insert([
-                ['PA_year' => PA_year(),
-                    'user_id' => $uID,
-                    '1_1' => 0,
-                    '1_1' => 0,
-                    '1_3' => 0,
-                    '1_4' => 0,
-                    '2_1' => 0,
-                    '2_2' => 0,
-                    '3' => 0,
-                    '4' => 0]
-            ]);
-        }
-    }
+//    public function Pa($uID) {
+//
+//        $year = DB::table('pa')
+//                ->where('PA_year', PA_year())
+//                ->where('user_id', $uID)
+//                ->get();
+//
+//        if ($year->count()<=0) {
+//
+//            DB::table('pa')->insert([
+//                ['PA_year' => PA_year(),
+//                    'user_id' => $uID,
+//                    '1_1' => 0,
+//                    '1_1' => 0,
+//                    '1_3' => 0,
+//                    '1_4' => 0,
+//                    '2_1' => 0,
+//                    '2_2' => 0,
+//                    '3' => 0,
+//                    '4' => 0]
+//            ]);
+//        }
+//    }
 }

@@ -33,6 +33,7 @@
              @include('layouts.main2')
         </div>
         <div class="row" id="block">
+            <div class="table-responsive">
              <table border="1" class="table_green" style="width:100%;margin: 0 auto;">
                 <tr class="tr_header">
                     <th style="width:5%;"> </th>
@@ -57,16 +58,14 @@
                 @endforeach
                 @else
                 <tr style="height:40px;">
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                     <td></td>
+                    <td colspan="6" style="text-align:center;">
+                        กรุณาเพิ่มข้อมูล
+                    </td>
                 </tr>
                 @endif
                 
             </table>
+            </div>
         </div>
 
         <div class="row" id="block">
@@ -81,11 +80,16 @@
                             <label><b>งานที่ปฏิบัติตามมาตรฐานตำแหน่ง</b></label>
                         </div>
                         <div class="col col-lg-6 col-md-6 col-sm-12">
-                            <select class="form-control" id="txtstandard" name="txtstandard" required>
+                            @if(count($standard)<=0)
+                            เพิ่มงานสำเร็จ
+                            @else
+                             <select class="form-control" id="txtstandard" name="txtstandard" required>
                                @foreach($standard as $standards)
                                <option value="{{$standards->id}}">{{$standards->detail}}</option>
                                @endforeach
                             </select>
+                             
+                            @endif
                         </div>
                     </div>
 
@@ -126,7 +130,23 @@
         </div>
     </div>
     <center>
-        <button type='submit' class="btn btn-success" ><li style="margin-right:10px;font-size: 18pt;" class="fa fa-arrow-circle-right "></li> เพิ่มงานถัดไป</button> 
+     
+        @if(count($task)>0)
+         @if(count($standard)<=0)
+      
+           <a class="btn_blue" href="{{url('PA3')}}"><li class="fa fa-arrow-circle-right "></li> ไปยังขั้นตอนถัดไป</a> 
+         @else
+          <button class="btn btn-success" type="submit" style="height:50px;">
+                        <li style="margin-right:5px;font-size: 14pt;" class="fa fa-arrow-circle-right "></li> 
+                        เพิ่มงานถัดไป
+         </button> 
+         @endif  
+        @else 
+            <button class="btn btn-success" type="submit" style="height:50px;">
+                        <li style="margin-right:5px;font-size: 14pt;" class="fa fa-arrow-circle-right "></li> 
+                        เพิ่มงาน
+         </button> 
+        @endif
     </center>
           </form>
 </div>

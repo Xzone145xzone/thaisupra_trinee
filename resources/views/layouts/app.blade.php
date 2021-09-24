@@ -8,12 +8,18 @@
         <meta name="author" content="" />
         <title>Thaisupra - PA</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <link href="/public/assets/css/styles.css" rel="stylesheet">
-        <link href="/public/assets/assets/css/app.css" rel="stylesheet">
+        <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
+         <link href="{{ asset('assets/css/input.css') }}" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
+
+<!--        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Niramit&display=swap" rel="stylesheet">-->
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
@@ -27,6 +33,7 @@
         <script src="{{asset('controller/pa_1_5.js')}}"></script> 
         <script src="{{asset('controller/pa_2_2.js')}}"></script> 
         <script src="{{asset('controller/pa_3.js')}}"></script> 
+ 
         <link href="{{ asset('assets/css/evaluation.css') }}" rel="stylesheet">
         <script src="{{asset('controller/element.js')}}"></script> 
     </head>
@@ -54,11 +61,11 @@
                 </div>
             </div>
         </nav>
-        <div class="row" id="SecoundNav" style="padding-top:65px;">            
+        <div class="row" id="SecoundNav" style="padding-top:60px;">            
            
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div style="float: left;margin-right:50px;margin-left:120px;">
-                    <img src="{{ asset('logo/logo.png') }}" style="width:75px;">
+                <div class="d-sm-none d-md-block" style="float: left;margin-right:50px;margin-left:100px;">
+                    <img src="{{ asset('logo/logo.png') }}" style="width:75px;border:0;">
                 </div>
                 <div style="float:left;color:white;padding-top: 20px;">
                     <b><span style="font-size: 14pt;">มูลนิธิครูดีของแผ่นดิน</span></b>    
@@ -82,7 +89,7 @@
                     <table border='0'>
                         <tr>
                             <td style="width:80px;">
-                                <img src="{{ asset('logo/logo.png') }}" style="width:70px;margin: 0.2em;">
+                                <img  src="{{ asset('logo/logo.png') }}" style="width:70px;margin: 0.2em;border:0;">
                             </td>
                             <td style="padding:0em;">
                                 ข้อตกลงในการพัฒนางานสำหรับครู <span style="font-size: 10pt;">(Performance Agreement){{PA_year()}}</span>
@@ -92,19 +99,19 @@
 
                 </div>
                 <div class="list-group list-group-flush" style="width:250px;">
-                    <div class="btn_sidebar" onclick="menu_toggle('dropdown_1');"><a href="{{url('PA1_1')}}"><u>ส่วนที่ 1</u> ข้อมูลผู้จัดทำข้อตกลงในการพัฒนางาน</a></div>
+                    <div class="btn_sidebar" onclick="menu_toggle('dropdown_1');"><a><u>ส่วนที่ 1</u> ข้อมูลผู้จัดทำข้อตกลงในการพัฒนางาน <i class="fa fa-caret-down" aria-hidden="true"></i></a></div>
                     <ul id="dropdown_1" class="dropdown" style="display: none;">
-                        <li><a href="{{url('PA1_1')}}">ข้อมูลทั่วไป</a></li>
-                        <li><a href="{{url('PA1_2')}}">ภาระงานตามที่ กคศ.กำหนด</a></li>
-                        <li><a href="{{url('PA1_3')}}">ประเภทห้องเรียนที่จัดการเรียนรู้</a></li>
-                        <li><a href="{{url('PA1_4')}}">การอบรมและพัฒนาตนเอง</a></li>
-                        <li><a href="{{url('PA1_5')}}">สื่อการเรียนรู้และนวัตกรรม</a></li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{{url('PA1_1')}}">ข้อมูลทั่วไป</a></li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{{url('PA1_2')}}">ภาระงานตามที่ กคศ.กำหนด</a></li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{{url('PA1_3')}}">ประเภทห้องเรียนที่จัดการเรียนรู้</a></li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{{url('PA1_4')}}">การอบรมและพัฒนาตนเอง</a></li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{{url('PA1_5')}}">สื่อการเรียนรู้และนวัตกรรม</a></li>
                     </ul>
-                    <div class="btn_sidebar" onclick="menu_toggle('dropdown_2');"><a href="{{url('PA2_1')}}"><u>ส่วนที่ 2</u> ผลการประเมินงานตามมาตรฐานตำแหน่งและภาระงานตามที่ ก.ค.ศ.กำหนด</a></div>
+                    <div class="btn_sidebar" onclick="menu_toggle('dropdown_2');"><a><u>ส่วนที่ 2</u> ผลการประเมินงานตามมาตรฐานตำแหน่งและภาระงานตามที่ ก.ค.ศ.กำหนด <i class="fa fa-caret-down" aria-hidden="true"></i></a></div>
                     <ul id="dropdown_2" class="dropdown" style="display: none;">
-                        <li><a href="{{url('PA2_1')}}">ผลการประเมิณ</a></li>
-                        <li><a href="{{url('PA2_2')}}">แผนการพัฒนาตนเอง</a></li>
-                        <li><a href="{{url('PA2_3')}}">งานที่ปฏิบัติตามมาตรฐานตำแหน่ง</a></li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{{url('PA2_1')}}">ผลการประเมิน</a></li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{{url('PA2_2')}}">แผนการพัฒนาตนเอง</a></li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{{url('PA2_3')}}">งานที่ปฏิบัติตามมาตรฐานตำแหน่ง</a></li>
                     </ul>
                     <div class="btn_sidebar"><a href="{{url('PA3')}}"><u>ส่วนที่ 3</u> การวิเคราะห์ประเด็นท้าทายในการพัฒนาผลลัพธ์การเรียนรู้ของผู้เรียน</a></div>
                     <div class="btn_sidebar"><a href="{{url('PA4')}}"><u>ส่วนที่ 4</u> แนวทางการพัฒนาและผลการพัฒนาผลลัพธ์การเรียนรู้ของผู้เรียนตามประเด็นท้าทาย</a></div>
@@ -118,7 +125,7 @@
                 @if(session('uAuth'))
                 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" >
                     <div class="container">
-                        <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                        <button class="btn btn-primary" id="sidebarToggle"><li class="fa fa-bars" title="toggle"></li></button>
                     </div>
                 </nav>
                 @endif

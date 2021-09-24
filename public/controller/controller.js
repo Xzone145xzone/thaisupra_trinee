@@ -59,7 +59,12 @@ function hide_last() {
 
 
 function cancel_row(ele, row) {
-    $("#"+ele+row).fadeOut();
+    
+    $("#"+ele+row).fadeOut("normal", function() {
+        $(this).remove();
+    });
+    
+    //$("#"+ele+row).remove().fadeOut();
 }
 
 

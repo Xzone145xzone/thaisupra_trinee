@@ -33,14 +33,14 @@
                     </td>
                 </tr>
             </table> 
-
+<div class="table-responsive">
             <table class="table_green" >
                 <tr class="tr_header">
                     <th style="width:30%;">กลุ่มสาระ</th>
-                    <th style="width:30%;">วิชาที่ทำการสอน</th>
+                    <th style="width:25%;">วิชาที่ทำการสอน</th>
                     <th style="width:10%;">ระดับชั้น</th>
                     <th style="width:20%;">ชั่วโมง</th>
-                    <th style="width:10%;"></th>
+                    <th style="width:15%;"></th>
                 </tr>
                 <tr style="height:40px;">
                     <td></td>
@@ -55,6 +55,7 @@
                     <th></th>
                 </tr>
             </table>
+</div>
         </div>
     </div>
 

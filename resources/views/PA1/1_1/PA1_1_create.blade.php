@@ -1,4 +1,4 @@
-@extends('layouts.app2')    
+@extends('layouts.app')    
 @section('content')
 <!-- Page content-->
 
@@ -172,18 +172,7 @@
                     </table>
                 </div>
 
-                <div class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 20px;margin-bottom:30px;">
-                    <div class="col-lg-7 col-md-7 col-sm-12">
-                        <table class="tbl_data" border="0">
-                            <tr>
-                                <th><b><span class="blue_small">อายุราชการรวม</span></b></th>
-                                <td>
-                                    - 
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+                
 
             </div>
 
@@ -256,18 +245,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="col-12 col-lg-12 col-md-12 col-sm-12" style="margin-top: 20px;margin-bottom:30px;">
-                    <div class="col-lg-7 col-md-7 col-sm-12">
-                        <table class="tbl_data" border="0">
-                            <tr>
-                                <th><b><span style="color:#1050A2;">อายุราชการตั้งแต่ดำรงค์ตำแหน่ง</span></b></th>
-                                <td>
-                                    - 
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+               
             </div>
         </div>
         <div class="child">
@@ -293,19 +271,21 @@
                 </table>
             </div>
             <div class="row" id="block" style="padding-bottom:100px;">
+                
+                <div class="table-responsive">
             <table id="tbl_edu" class="table table-striped">
-                <tr>
-                    <th style="width:20%;text-align: center;">วุฒิ</th>
-                    <th style="width:20%;text-align: center;">คณะ</th>
-                    <th style="width:20%;text-align: center;">สาขา</th>
-                    <th style="width:30%;text-align: center;">สถานศึกษา</th>
-                    <td style="width:10%;"></td>
-                </tr>         
+                 <tr class="tr_header">
+                <th style="width:25%;">วุฒิ</th>
+                <th style="width:20%;">คณะ</th>
+                  <th style="width:20%;">สาขา</th>
+                <th style="width:25%;">สถานศึกษา</th>
+                <th style="width:10%;"></th>
+            </tr>    
                 <tr style="height:40px;">
                     <td colspan="5" style="text-align: center;"><b>เพิ่มวุฒิการศึกษา</b></td>
                 </tr>
             </table>
-                
+                </div>
      
              </div>     
         </div>

@@ -21,6 +21,7 @@ use App\group_learn;
 use App\pa_task;
 use App\pa_standard_development;
 use App\pa_evaluation;
+use App\pa_issue;
 use Illuminate\Support\Facades\DB;
 use Session;
 use Input;
@@ -130,7 +131,7 @@ class PA4Controller extends Controller {
 
         pa_issue::where('id', $request->id)
                 ->update(array($request->field => $request->value));
-        return true;
+       return true;
     }
 
     
@@ -150,7 +151,7 @@ class PA4Controller extends Controller {
             <head><meta charset="utf-8"></head>
             <body style="font-family:"THSarabunNew",sans-serif;font-size:16px;">
                 <b>ประเด็นท้าทาย เรื่อง</b> <br> '.$issue->issue.'
-                <p><b>1.สภาพปัญหาของผู้เรียนและการจัดการเรียนรู้ </b>
+                <p><b>1.สภาพปัญหาของผู้เรียนและการจัดการเรียนรู้ </b><br>
                 '.$issue->detail_1.'
                 <p><b>2.วิธีการดำเนินการให้บรรลุผล </b> 
                 '.$issue->detail_2.'
@@ -160,7 +161,7 @@ class PA4Controller extends Controller {
                 <p><b>3.2 เชิงคุณภาพ </b> 
                 '.$issue->detail_4.'
                 <div style="width:100%;">
-                <div style="width:800px;float:left;"></div>
+                <div style="width:1000px;float:left;"></div>
                 <div style="width:50%;text-align:center;float:left;">
                  ลงชื่อ..........................................................................
                 <br>(.........................................................................)

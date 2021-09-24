@@ -112,8 +112,8 @@ function add_schedule_edit() {
         <td><input type="text" class="form-control" id="txtgrade" name="txtigrade[' + sche + ']" required style="text-align:center;"></td>\n\
         <td><input type="number" class="form-control" id="txthour_sch" name="txtihour_sch[' + sche + ']" required style="text-align:center;"></td>\n\
         <td style="text-align:center;">\n\
-           <a class="btn btn-info" style="padding:0;" onclick="save_row_sch(' + sche + ');">save</a>\n\
-           <a class="btn btn-info" style="padding:0;" onclick="cancel_row(\'' + sche_string + '\',' + sche + ');">cancel</a>\n\
+           <a class="btn_green_small" style="width:55px;" onclick="save_row_sch(' + sche + ');">save</a>\n\
+           <a class="btn_green_small"  onclick="cancel_row(\'' + sche_string + '\',' + sche + ');">cancel</a>\n\
         </td>\n\
         </tr>');
 
@@ -127,8 +127,8 @@ function add_support_edit() {
         <td><input type="text" class="form-control" id="txtsupport" name="txtisupport[' + supp + ']" required style="text-align:center;"></td>\n\
         <td><input type="number" class="form-control" id="txthour_sp" name="txtihour_sp[' + supp + ']" required style="text-align:center;"></td>\n\
         <td style="text-align:center;">\n\
-         <a class="btn btn-info" style="padding:0;" onclick="save_row_sp(' + supp + ');">save</a>\n\
-         <a class="btn btn-info" style="padding:0;" onclick="cancel_row(\'' + supp_string + '\',' + supp + ');">cancel</a>\n\
+         <a class="btn_green_small" style="width:55px;" onclick="save_row_sp(' + supp + ');">save</a>\n\
+         <a class="btn_green_small" onclick="cancel_row(\'' + supp_string + '\',' + supp + ');">cancel</a>\n\
         </td>\n\
         </tr>');
 
@@ -142,8 +142,8 @@ function add_develop_edit() {
         <td><input type="text" class="form-control" id="txtidevelop" name="txtidevelop[' + devlp + ']" required style="text-align:center;"></td>\n\
         <td><input type="number" class="form-control" id="txtihour_develop" name="txtihour_develop[' + devlp + ']" required style="text-align:center;"></td>\n\
         <td style="text-align:center;">\n\
-         <a class="btn btn-info" style="padding:0;" onclick="save_row_dev(' + devlp + ');">save</a>\n\
-         <a class="btn btn-info" style="padding:0;" onclick="cancel_row(\'' + devlp_string + '\',' + devlp + ');">cancel</a>\n\
+         <a class="btn_green_small" style="width:55px;" onclick="save_row_dev(' + devlp + ');">save</a>\n\
+         <a class="btn_green_small" onclick="cancel_row(\'' + devlp_string + '\',' + devlp + ');">cancel</a>\n\
         </td>\n\
         </tr>');
 
@@ -157,8 +157,8 @@ function add_response_edit() {
         <td><input type="text" class="form-control" id="txtiresponse" name="txtiresponse[' + response + ']" required style="text-align:center;"></td>\n\
         <td><input type="number" class="form-control" id="txtihour_response" name="txtihour_response[' + response + ']" required style="text-align:center;"></td>\n\
         <td style="text-align:center;">\n\
-          <a class="btn btn-info" style="padding:0;" onclick="save_row_response(' + response + ');">save</a>\n\
-         <a class="btn btn-info" style="padding:0;" onclick="cancel_row(\'' + response_string + '\',' + response + ');">cancel</a>\n\
+          <a class="btn_green_small" style="width:55px;" onclick="save_row_response(' + response + ');">save</a>\n\
+         <a class="btn_green_small" onclick="cancel_row(\'' + response_string + '\',' + response + ');">cancel</a>\n\
         </td>\n\
         </tr>');
 

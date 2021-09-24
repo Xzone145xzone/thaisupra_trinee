@@ -11,19 +11,19 @@
                         <span class="text_blue"><b><u>ส่วนที่ 3</u> การวิเคราะห์ประเด็นท้าทายในการพัฒนาผลลัพธ์การเรียนรู้ของผู้เรียน</b></span>
                     </td>
                     <td colspan="2" style="text-align:right;">
-                        <span class="text_blue"><b>แบบประเมิณ</b></span>
+                        <span class="text_blue"><b>แบบประเมิน</b></span>
                     </td>
                 </tr>
 
             </table>
         </div>
 
-        <span class="text_blue"><b>เลขที่แบบประเมิณ : WE7845415215</b></span>
+        <span class="text_blue"><b>เลขที่แบบประเมิน : WE7845415215</b></span>
         
         <div class="row" style="margin:30px;">            
             <a class="btn_blue" href="{{url('PA3_evaluation/WE7845415215')}}" style='width:200px;'>
                 <li style="margin-right:10px;font-size: 18pt;" class="fa fa-arrow-circle-right "></li> 
-                เริ่มทำแบบประเมิณ
+                เริ่มทำแบบประเมิน
             </a> 
         </div>
         <div class="row">
@@ -45,23 +45,24 @@
                 </div>
             </div>-->
                 
-                
+                <div class="table-responsive">
                 <table class="table_green" style="width:100%;margin:0;" border='1'>
                     <tr class="tr_header">
-                        <th> ผู้ประเมิณ </th>
-                        <th>เวลาประเมิณ</th>
-                        <th>แบบประเมิณ</th>
+                        <th> ผู้ประเมิน </th>
+                        <th>เวลาประเมิน</th>
+                        <th>แบบประเมิน</th>
                         <th></th>
                     </tr>
                     @for($i=0;$i<=10;$i++)
                     <tr>
                         <td>น.ส.สุดสวย ใจสบาย</td> 
                         <td>2021-08-09:15:00</td>
-                        <td><a href="{{url('evaluation')}}" target="_blank" class="btn" style="background-color:#52E973;">ประเมิณแล้ว</a></td> 
-                        <td><a class="btn btn-default" style="background-color:#ddd;"><li class="fa fa-trash"></li></a></td>
+                        <td>ประเมินแล้ว</td> 
+                        <td style="text-align: center;"><a class="btn btn-default" style="background-color:#ddd;"><li class="fa fa-trash"></li></a></td>
                     </tr>
                     @endfor
                 </table>
+                </div>
             </div>
              
         </div>

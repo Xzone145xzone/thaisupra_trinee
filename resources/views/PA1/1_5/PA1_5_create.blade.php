@@ -22,18 +22,14 @@
         </div>
 
 
-        <table style="width: 100%;" border="0">
-            <tr style="height: 70px;">
-                <td style="width: 50%;">
-                </td>
-                <td style="text-align:right;width: 50%;">
+         <div style="width: 100%;text-align: right;margin:1em;">
                     <a class="btn_page" onclick="add_innovation();" ><span class="fa fa-plus"></span> เพิ่มสื่อการเรียนรู้ / นวัตกรรม</a>
-                </td>
-            </tr>
-        </table>
+         </div>
 
-        <div id="div_innovation" style="margin:1em;padding: 2em;border: 1px solid gainsboro;">
+        <div id="block">
+        <div id="div_innovation">
 
+        </div>
         </div>
     </div>
     <center>

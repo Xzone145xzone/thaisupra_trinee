@@ -92,7 +92,7 @@ function pa4_update_field(fields) {
     var ids = $("#hdnid").val();
 
     $.ajax({
-        url: "PA4_update_field",
+        url: "/PA4_update_field",
         type: "POST",
         data: {
             field: fields,

@@ -13,7 +13,7 @@ use App\Http\Middleware\UserSesstion;
 
 
     Route::get('/', [AuthController::class, 'login']);
-    Route::get('/login', [AuthController::class, 'login']);
+    Route::get('login', [AuthController::class, 'login'])->name('login');;
     Route::get('/logout', [AuthController::class, 'logout']);
     
     Route::post('authentication', [AuthController::class, 'authentication']);
@@ -22,11 +22,13 @@ use App\Http\Middleware\UserSesstion;
     ##################################################################################
     
     
+    Route::group(['middleware' => 'auth'], function () {
+    
     Route::get('PA/{uId}', [AuthController::class, 'PA']);
     Route::get('PA_update/{uId}/{field}', [AuthController::class, 'PA_update']);
    
-     Route::get('PA1', [PA1Controller::class, 'PA1']);
-     Route::post('PA1_insert', [PA1Controller::class, 'PA1_insert']);
+    Route::get('PA1', [PA1Controller::class, 'PA1']);
+    Route::post('PA1_insert', [PA1Controller::class, 'PA1_insert']);
      
     ####################################################################################
     
@@ -114,5 +116,7 @@ use App\Http\Middleware\UserSesstion;
     
     Route::get('PA5', [PA5Controller::class, 'PA5']);
     Route::get('Template1', [PA5Controller::class, 'Template1']); 
-
+    
+    
+});
 

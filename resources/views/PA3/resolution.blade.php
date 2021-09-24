@@ -28,14 +28,15 @@
             </div>
            
                 <div class="row" style="margin-top: 60px;">
+                     <div class="table-responsive">
                     <table style="width:100%;border: 1px solid green;" border='1'>
                         <tr style="height:70px;">
                             <td rowspan="2" style="width:60%;text-align: center;">สมรรถนะสำหรับการศึกษาขั้นพื้นฐาน</td>
                             <td colspan="2" style="width:20%;text-align: center;">ระดับสมรรถนะผู้เรียน</td>
                         </tr>
                         <tr style="height:70px;">
-                            <td style="width:20%;text-align: center;">นักเรียนประเมิณ</td>
-                            <td style="width:20%;text-align: center;">ครูประเมิณ</td>
+                            <td style="width:20%;text-align: center;">นักเรียนประเมิน</td>
+                            <td style="width:20%;text-align: center;">ครูประเมิน</td>
                         </tr>
                         <tr class="tr_header">
                             <th>ด้านการจัดการความรู้</th>
@@ -56,6 +57,7 @@
                         </tr>
                         @endfor
                     </table>
+                     </div>
                 </div>
           
         </div>

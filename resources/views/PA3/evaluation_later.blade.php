@@ -82,6 +82,7 @@
             </div>
             <div class="row" style="padding-bottom: 60px;">
                 <div class="col col-md-12 col-lg-12 col-sm-12" style="margin-top: 60px;">
+                     <div class="table-responsive">
                     <table class="table_evaluation" style="width:100%;" border='1'>
                         <tr class="tr_header_green">
                             <th rowspan="2">ความสามารถของนักเรียน</th>
@@ -122,6 +123,7 @@
                         @endfor
                         @endfor
                     </table>
+                     </div>
                 </div>
             </div>
         </div>

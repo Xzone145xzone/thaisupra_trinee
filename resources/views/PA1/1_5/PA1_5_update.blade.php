@@ -24,23 +24,19 @@
         </div>
 
 
-        <table style="width: 100%;" border="0">
-            <tr style="height: 70px;">
-                <td style="width: 50%;">
-                </td>
-                <td style="text-align:right;width: 50%;">
-                    <a class="btn_page" onclick="add_innovation_edit();" ><span class="fa fa-plus"></span> เพิ่มสื่อการเรียนรู้ / นวัตกรรม</a>
-                </td>
-            </tr>
-        </table>
-
-        <div id="div_innovation" style="margin:1em;padding: 2em;border: 1px solid gainsboro;">
+         <div style="width: 100%;text-align: right;margin:1em;">
+                    <a class="btn_page" onclick="add_innovation_edit();">
+                        <span class="fa fa-plus"></span> เพิ่มสื่อการเรียนรู้ / นวัตกรรม
+                    </a>
+         </div>
+ <div id="block">
+        <div id="div_innovation">
             @foreach($inno as $innos)
-            <div class="inno">
-                <table style="width: 100%;" border="0">
+            <div style="width:90%;border: 1px solid gray;background-color: #ddd;padding: 1em;margin: 20px;">
+                <table style="width: 80%;" border="0">
                     <tr>
-                        <td style="width: 90%;padding-left: 20px;"> {{$innos->innovation}} </td>
-                        <td style="width: 10%;text-align: center;"><a class="btn btn-default" href="PA_1_delete_inno/{{$innos->id}}"><li class="fa fa-trash"></li></a></td>
+                        <td style="width:90%;padding-left: 20px;"> {{$innos->innovation}} </td>
+                        <td style="width:5%;text-align: center;"><a class="btn btn-default" href="PA_1_delete_inno/{{$innos->id}}"><li class="fa fa-trash"></li></a></td>
                     </tr>
                 </table>
               
@@ -48,6 +44,7 @@
             </div>
             @endforeach
         </div>
+ </div>
     </div>
     <center>
     <a class="btn_blue" href="{{url('/PA2_1')}}"><li style="margin-right:10px;font-size: 18pt;" class="fa fa-arrow-circle-right "></li> ไปยังขั้นตอนถัดไป</a> 

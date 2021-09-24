@@ -6,7 +6,6 @@
 <div class="container-fluid" id="container-fluid">
 
 
-    <form method="post" action="{{url('/PA4_insert')}}">
         @csrf
         <div class="child">
             <div class="page_header">
@@ -122,8 +121,6 @@
                 </div>
             </div>
         </div>
-
-    </form>
 </div>
 
 @endsection

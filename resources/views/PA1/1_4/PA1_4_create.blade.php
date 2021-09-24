@@ -22,33 +22,25 @@
         </div>
        
         <div class="row" id="block">
-            <table style="width: 100%;" border="0">
-                <tr style="height: 70px;">
-                    <td style="width: 50%;">
-                    </td>
-                    <td style="text-align:right;width: 50%;">
+           <div style="width: 100%;text-align: right;margin:1em;">
                         <a class="btn_page" onclick="add_train();" ><span class="fa fa-plus"></span> เพิ่มประวัติการอบรม</a>
-                    </td>
-                </tr>
-            </table>  
+           </div>
+                    
+            <div class="table-responsive">
             <table class="table_green" id='tbl_train'>
                 <tr class="tr_header">                   
-                    <th style="width:30%;">หัวข้อในการอบรม</th>
+                    <th style="width:25%;">หัวข้อในการอบรม</th>
                     <th style="width:15%;">วันเริ่มต้น</th>
                     <th style="width:15%;">วันสิ้นสุด</th> 
                     <th style="width:10%;">จำนวนชั่วโมง</th>
                     <th style="width:20%;">หน่วยงานที่จัด</th> 
-                    <th style="width:10%;"></th> 
+                    <th style="width:20%;"></th> 
                 </tr>
                 <tr style="height:40px;">
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="6" style="text-align: center;">ไม่มีข้อมูล</td>
                 </tr>             
             </table>
+            </div>
         </div>
        
     </div>

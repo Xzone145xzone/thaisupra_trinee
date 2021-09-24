@@ -294,7 +294,6 @@ class PA1Controller extends Controller {
                             'agency' => $request->txtagency[$i]]
                     ]);
                 }
-            
         }
 
         return redirect('PA1_4');

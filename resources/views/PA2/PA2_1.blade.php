@@ -103,7 +103,7 @@
                         <span class="blue_big"><b><u>ส่วนที่ 2</u> ผลการประเมินงานตามมาตรฐานตำแหน่งและภาระงานตามที่ ก.ค.ศ.กำหนด</b></span>
                     </td>
                     <td colspan="2" style="text-align:right;">
-                        <span class="text_blue"><b>ผลการประเมิณ</b></span>
+                        <span class="text_blue"><b>ผลการประเมิน</b></span>
                     </td>
                 </tr>
             </table>
@@ -120,18 +120,18 @@
                     <td style="text-align: right;width: 10%;">มาตรฐาน</td>
                 </tr>
                 <tr>
-                    <td style="text-align: left;">งานตามมาตรฐานตำแหน่งระดับคุณภาพปานกลาง</td>
+                    <td style="text-align: left;">งานตามมาตรฐานตำแหน่งระดับคุณภาพดี</td>
+                    <td style="text-align: right;">4</td>
+                    <td style="text-align: right;width: 10%;">มาตรฐาน</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">งานตามมาตรฐานตำแหน่งระดับปานกลาง</td>
                     <td style="text-align: right;">3</td>
                     <td style="text-align: right;width: 10%;">มาตรฐาน</td>
                 </tr>
                 <tr>
-                    <td style="text-align: left;">งานตามมาตรฐานตำแหน่งระดับคุณภาพดี</td>
-                    <td style="text-align: right;">2</td>
-                    <td style="text-align: right;width: 10%;">มาตรฐาน</td>
-                </tr>
-                <tr>
                     <td style="text-align: left;">งานตามมาตรฐานตำแหน่งระดับพอใช้</td>
-                    <td style="text-align: right;">1</td>
+                    <td style="text-align: right;">2</td>
                     <td style="text-align: right;width: 10%;">มาตรฐาน</td>
                 </tr>
                 <tr>
@@ -145,6 +145,7 @@
         
         
         <div style="margin-top: 60px;">
+            <div class="table-responsive">
             <table style="width:100%" border="1">
                 <tr style="height:70px;">
                     <td style="width:60%;text-align: center;">งานตามมาตรฐานตำแหน่ง</td>
@@ -172,6 +173,7 @@
                  @endforeach
                 @endforeach
             </table>
+            </div>
         </div>
         <br><br><b>หมายเหตุ</b> ข้อมูลจากผลการประเมินของมูลนิธิครูดีของแผ่นดิน ซึ่งประเมินครอบคลุมคุณลักษณะด้านครองตน ครองคน และครองงาน ด้วยข้อคำถามที่ผ่านการตรวจสอบคุณภาพแล้วจำนวน 83 ข้อ
         <br><br><b>เกณฑ์การให้คะแนน</b>
@@ -187,7 +189,7 @@
 
             <center>
                 <span class="text_blue_small" style="">
-                    งานตามมาตรฐานตำแหน่ง เรียงตามผลการประเมิณ มาก - น้อย
+                    งานตามมาตรฐานตำแหน่ง เรียงตามผลการประเมิน มาก - น้อย
                 </span><br><br>
             </center>
 
@@ -218,7 +220,7 @@
                 </tr> 
                 <tr>
                     <td>4</td>
-                    <td>วินัย คุณธรรม จริยธรรม จรรยาบรรณ วิชาขีพ</td>
+                    <td>ด้านการส่งเสริมและสนับสนุนการจัดการเรียนรู้</td>
                     <td style="text-align: center;">1</td>
                     <td style="text-align: center;">ปรับปรุง</td>
                 </tr> 

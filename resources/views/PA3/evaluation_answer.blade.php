@@ -3,11 +3,19 @@
 
             <div class="container-fluid" style="padding: 1em;">
             <div class="row">
+                <br>
+                <a class="btn btn-success" href="{{url('PA3')}}" style="width: 130px;height:45px;">
+                    <li style="margin-right:10px;font-size: 18pt;" class="fa fa-arrow-circle-right "></li> 
+                    ย้อนกลับ
+                </a> 
+                <br><br>
+                
                 <div class="col-md-7 col-lg-7 col-sm-12" style="border: 1px solid green;padding:1em;margin: 0 auto;">
                     <center>
                         <h2> <span class="text_blue"><b>การประเมินความต้องการพัฒนาสมรรถนะผู้เรียน</b></span></h2>
                     </center> 
-                    <br>
+                  
+                    
                     <table  style="width: 100%;color:#1050A2;">
                         <tr>
                             <th style="width:15%;vertical-align: top;">คำชี้แจง</th>
@@ -51,8 +59,10 @@
             <form method="post" action="{{url('/PA3_evaluation_answer')}}">
                  @csrf
             <div class="row" style="padding-bottom: 60px;">
+              
                 <div class="col-md-12 col-lg-12 col-sm-12" style="margin-top: 60px;">
                     <input type="hidden" id="hdneva_id" name="hdneva_id" value="{{$eva_id}}">
+                     <div class="table-responsive">
                     <table class="table_evaluation"  border='1'>
                         <tr class="tr_header_green">
                             <th ></th>
@@ -72,11 +82,11 @@
                         <tr class="tr_header_blue" style="height: 60px;">
                             <th></th>
                             <th>{{$topic->detail}}</th>
-                           <th></th>
-                           <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
+                           <th>5</th>
+                           <th>4</th>
+                            <th>3</th>
+                            <th>2</th>
+                            <th>1</th>
                         </tr>
                         <?php $j=0; ?>
                         <?php $question = $model->find_question($topic->no); ?>
@@ -100,11 +110,17 @@
                          <?php $i++; ?>
                         @endforeach
                     </table>
+                     </div>
                 </div>
                 
-                
+                  <center><br><br>
+                         <a class="btn btn-success" href="{{url('PA3')}}"><li style="margin-right:10px;font-size: 18pt;" class="fa fa-arrow-circle-right "></li> ย้อนกลับ</a> 
+                </center>
                 
             </div>
+                 
+                   
+                
                 </form>
         </div>
 @endsection

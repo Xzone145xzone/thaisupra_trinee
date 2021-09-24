@@ -3,6 +3,7 @@
     .menu-main {
         list-style-type:none;
         margin-top: 5px;
+        padding: 0;
     }
     .menu-main li {
         display: inline-block;
@@ -44,7 +45,7 @@
 </style>
 
 <ul class='menu-main'>
-    <li><a href="/PA1_1"><span class="fa fa-arrow-circle-right "></span> ข้อมูลทั่วไป</a></li>
+    <li style="width:130px;"><a href="/PA1_1" ><span class="fa fa-arrow-circle-right "></span> ข้อมูลทั่วไป</a></li>
     <li><a href="/PA1_2"><span  class="fa fa-arrow-circle-right "></span>ภาระงานตามที่ ก.ค.ศ.กำหนด</a></li>
     <li><a href="/PA1_3"><span  class="fa fa-arrow-circle-right "></span>ประเภทห้องเรียนที่จัดการเรียนรู้</a></li>
     <li><a href="/PA1_4"><span  class="fa fa-arrow-circle-right "></span>การอบรมและพัฒนาตนเอง</a></li>

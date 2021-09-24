@@ -52,8 +52,8 @@ function add_edu_edit() {
     <td><input type="text" class="form-control" id="txtimajor" name="txtimajor[' + edu + ']" required></td>\n\
     <td><input type="text" class="form-control" id="txtischool" name="txtischool[' + edu + ']" required></td>\n\
     <td style="text-align: center;">\n\
-      <a class="btn btn-info" style="padding:0;" onclick="save_edu_row(' + edu + ');">save</a>\n\
-      <a class="btn btn-info" style="padding:0;" onclick="cancel_row(\'' + edu_string + '\',' + edu + ');">cancel</a>\n\
+      <a class="btn_green_small" style="width:55px;" onclick="save_edu_row(' + edu + ');">save</a>\n\
+      <a class="btn_green_small" onclick="cancel_row(\'' + edu_string + '\',' + edu + ');">cancel</a>\n\
     </td>\n\
     </tr>');
     edu++;

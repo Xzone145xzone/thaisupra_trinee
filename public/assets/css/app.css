@@ -6,9 +6,15 @@ body {
     font-size: 12pt;
     color:#585858;
     font-family: 'Noto Sans Thai', sans-serif;
+/*font-family: 'Niramit', sans-serif;*/
     /*    color:green;*/
 }
 
+
+.div_innovation{
+    margin:1em;border: 1px solid gainsboro;
+    padding: 1em;
+}
 
 .error{
     color:red;
@@ -106,7 +112,7 @@ input{
     border: 1px solid #ddd;
     border-radius: 5px;
     width: 100%;
-    color:#999999;
+    color:gray;
     padding: 5px 30px;
     margin: 5px;
 
@@ -282,7 +288,7 @@ textArea{
 *:focus {
     outline: 0;
     box-shadow: 0 0 0 3px rgba(0, 123, 255, .5);
-    color:#cccccc;
+    color:gray;
 }
 label{
     margin-top:10px;
@@ -539,13 +545,12 @@ img:hover {
 }
 
 .inno{
-    width:100%;
+    width:90%;
     height:auto;
     background-color:#eee;
-    padding:1em;
+    padding:0.5em;
     margin:20px;
     border:1px solid #ddd;
-    position: relative;
 }
 
 .display_block{
@@ -586,10 +591,15 @@ img:hover {
     padding:1em;
     border: 1px solid #ccc;
     background-color: #eee;
-    width: 80%;
+    width: 100%;
     color: black;
 }
 
 .text{
     width:100%;
 }
+
+.panel_right{
+    width: 100%;text-align: right;margin:1em;
+}
+

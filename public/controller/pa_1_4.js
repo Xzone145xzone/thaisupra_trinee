@@ -6,12 +6,15 @@
    
     function add_train() {
         $("#tbl_train").append('<tr id="tr_train_' + train + '">\n\
-        <td><input type="text" style="text-align:center;" class="form-control" id="txttrain" name="txttrain[]" required></td>\n\
-        <td><input type="date" style="text-align:center;" class="form-control" id="txtstart_date" name="txtstart_date[]"></td>\n\
-        <td><input type="date" style="text-align:center;" class="form-control" id="txtend_date" name="txtend_date[]"></td>\n\
-        <td><input type="number" style="text-align:center;" class="form-control" id="txthour" name="txthour[]" required></td>\n\
-        <td><input type="text" style="text-align:center;" class="form-control" id="txtagency" name="txtagency[]" required></td>\n\
-        <td><a class="btn btn-default" onclick="cancel_row(\'' + train_string + '\',' + train + ');"><li class="fa fa-trash"></li></a></td>\n\
+        <td style="width:25%;padding:0em;"><input type="text" style="text-align:center;width:90%;" class="form-control" id="txttrain" name="txttrain[]" required></td>\n\
+        <td style="padding:0em;width:15%;"><input type="date" style="text-align:center;width:90%;" class="form-control" id="txtstart_date" name="txtstart_date[]"></td>\n\
+        <td style="padding:0em;width:15%;"><input type="date" style="text-align:center;width:90%;" class="form-control" id="txtend_date" name="txtend_date[]"></td>\n\
+        <td style="width:10%;padding:0em;"><input type="number" style="text-align:center;width:80%;" class="form-control" id="txthour" name="txthour[]" required></td>\n\
+        <td style="width:10%;"><input type="text" style="text-align:center;" class="form-control" id="txtagency" name="txtagency[]" required></td>\n\
+        <td style="text-align:center;width:20%;">\n\
+        <a class="btn btn-default" onclick="cancel_row(\'' + train_string + '\',' + train + ');">\n\
+        <li class="fa fa-trash"></li>\n\
+        </a></td>\n\
         </tr>');
             train++;
     }
@@ -20,14 +23,14 @@
 
     function add_train_edit() {
         $("#tbl_train").append('<tr id="tr_train_' + train + '">\n\
-            <td><input type="text" style="text-align:center;" class="form-control" id="txttrain" name="txtitrain[' + train + ']" required></td>\n\
-        <td><input type="date" style="text-align:center;" class="form-control" id="txtstart_date" name="txtistart_date[' + train + ']"></td>\n\
-        <td><input type="date" style="text-align:center;" class="form-control" id="txtend_date" name="txtiend_date[' + train + ']"></td>\n\
-        <td><input type="number" style="text-align:center;" class="form-control" id="txtihour" name="txtihour[' + train + ']" required></td>\n\
-        <td><input type="text" style="text-align:center;" class="form-control" id="txtiagency" name="txtiagency[' + train + ']" required></td>\n\
-        <td style="text-align:center;">\n\
-           <a class="btn btn-info" style="padding:0;" onclick="save_row_train(' + train + ');">save</a>\n\
-           <a class="btn btn-info" style="padding:0;" onclick="cancel_row(\'' + train_string + '\',' + train + ');">cancel</a>\n\
+        <td style="width:25%;padding:0em;"><input type="text" style="text-align:center;width:90%;" class="form-control" id="txttrain" name="txtitrain[' + train + ']" required></td>\n\
+        <td style="padding:0em;width:15%;"><input type="date" style="text-align:center;width:90%;" class="form-control" id="txtstart_date" name="txtistart_date[' + train + ']"></td>\n\
+        <td style="padding:0em;width:15%;"><input type="date" style="text-align:center;width:90%;" class="form-control" id="txtend_date" name="txtiend_date[' + train + ']"></td>\n\
+        <td style="width:10%;padding:0em;"><input type="number" style="text-align:center;width:80%;" class="form-control" id="txtihour" name="txtihour[' + train + ']" required></td>\n\
+        <td style="width:10%;"><input type="text" style="text-align:center;" class="form-control" id="txtiagency" name="txtiagency[' + train + ']" required></td>\n\
+        <td style="text-align:center;width:20%;">\n\
+           <a class="btn_green_small" style="width:55px;"  onclick="save_row_train(' + train + ');">save</a>\n\
+           <a class="btn_green_small"  onclick="cancel_row(\'' + train_string + '\',' + train + ');">cancel</a>\n\
         </td>\n\
         </tr>');
             train++;

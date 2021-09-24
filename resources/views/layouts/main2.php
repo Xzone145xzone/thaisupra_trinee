@@ -44,7 +44,7 @@
 </style>
 
 <ul class='menu-main'>
-    <li><a href="/PA2_1"><span class="fa fa-arrow-circle-right "></span>ผลการประเมิณ</a></li>
+    <li><a href="/PA2_1"><span class="fa fa-arrow-circle-right "></span>ผลการประเมิน</a></li>
     <li><a href="/PA2_2"><span  class="fa fa-arrow-circle-right "></span>แผนพัฒนาตนเอง</a></li>
     <li><a href="/PA2_3"><span  class="fa fa-arrow-circle-right "></span>งานที่ปฏิบัติตามมาตรฐานตำแหน่ง </a></li>
 </ul>

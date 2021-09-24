@@ -19,7 +19,7 @@ function add_innovation(){
  
 function add_innovation_edit(){
     
-    $("#div_innovation").append('<div id="inno_row_'+inno+'" class="inno">\n\
+    $("#div_innovation").append('<div id="inno_row_'+inno+'" class="width:90%;border: 1px solid gray;background-color: #ddd;padding: 1em;margin: 20px;">\n\
       <table style="width:100%;">\n\
       <tr>\n\
       <td style="width:90%;"><textarea class="form-control" id="txtiinno" name="txtiinno['+inno+']" required></textarea>\n\</td>\n\

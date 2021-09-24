@@ -11,6 +11,6 @@ class PA extends Model
 
     
     
-    protected $table = "PA";
+    protected $table = "pa";
     
 }

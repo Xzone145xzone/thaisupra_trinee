@@ -1,4 +1,4 @@
-@extends('layouts.app2')    
+@extends('layouts.app')    
 @section('content')
 
 <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -21,8 +21,9 @@
                 </tr>
              
             </table>
+            @include('layouts.main1')
+
         </div>
-@include('layouts.main1')
 
         <div class="row" id="block">
           
@@ -373,8 +374,8 @@
                     <table class="tbl_data" border="0">
                         <tr>
                             <th><b><span class="blue_small">อายุราชการตั้งแต่ดำรงค์ตำแหน่ง</span></b></th>
-                            <td>
-                                12 ปี 4 เดือน 5 วัน 
+                            <td style="padding-left: 50px;">
+                                {{calage($uProfile->dateacademic)}}
                             </td>
                         </tr>
                     </table>
@@ -407,13 +408,14 @@
             </table>
         </div>
 
+       <div class="table-responsive">
         <table id="tbl_edu" class="table_green" style="width:100%;"> 
             <tr class="tr_header">
                 <th style="width:25%;">วุฒิ</th>
                 <th style="width:20%;">คณะ</th>
                   <th style="width:20%;">สาขา</th>
-                <th style="width:25%;">สถานศึกษา</th>
-                <th style="width:10%;"></th>
+                <th style="width:20%;">สถานศึกษา</th>
+                <th style="width:15%;"></th>
             </tr>         
 
             <?php $i=0;?>
@@ -476,6 +478,7 @@
 
 
         </table>
+            </div>
     </div>
 
     <center>
