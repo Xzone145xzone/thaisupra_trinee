@@ -24,18 +24,18 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-        <script src="{{asset('controller/controller.js')}}"></script>
-        <script src="{{asset('controller/pa_1_2.js')}}"></script>
-        <script src="{{asset('controller/pa_1_1.js')}}"></script>
-        <script src="{{asset('controller/pa_1_4.js')}}"></script>
-        <script src="{{asset('controller/pa_1_3.js')}}"></script>
-        <script src="{{asset('controller/pa_4.js')}}"></script>
-        <script src="{{asset('controller/pa_1_5.js')}}"></script> 
-        <script src="{{asset('controller/pa_2_2.js')}}"></script> 
-        <script src="{{asset('controller/pa_3.js')}}"></script> 
+        <script src="{{url('storage/controller/controller.js')}}"></script>
+        <script src="{{url('storage/controller/pa_1_2.js')}}"></script>
+        <script src="{{url('storage/controller/pa_1_1.js')}}"></script>
+        <script src="{{url('storage/controller/pa_1_4.js')}}"></script>
+        <script src="{{url('storage/controller/pa_1_3.js')}}"></script>
+        <script src="{{url('storage/controller/pa_4.js')}}"></script>
+        <script src="{{url('storage/controller/pa_1_5.js')}}"></script> 
+        <script src="{{url('storage/controller/pa_2_2.js')}}"></script> 
+        <script src="{{url('storage/controller/pa_3.js')}}"></script> 
  
         <link href="{{ asset('assets/css/evaluation.css') }}" rel="stylesheet">
-        <script src="{{asset('controller/element.js')}}"></script> 
+        <script src="{{url('storage/controller/element.js')}}"></script> 
     </head>
     <body>
         @include('layouts.extend')

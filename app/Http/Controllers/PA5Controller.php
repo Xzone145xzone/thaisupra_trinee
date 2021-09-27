@@ -96,6 +96,12 @@ class PA5Controller extends Controller {
             $content = '<html>
             <head><meta charset="utf-8"></head>
             <body style="font-family:"THSarabunNew",sans-serif;font-size:18px;">
+            
+   
+              <img src="/storage/template/template1/cover.gif"> 
+
+<br style="page-break-before: always">
+
             <center><b><h2>คำนำ</h2></b></center>
             <center>
 สำนักงาน ก.ค.ศ. ได้ออกหลักเกณฑ์และวิธีการให้ข้าราชการครูและบุคลากรทางการศึกษา ตำแหน่งครู มีวิทยฐานะและเลื่อนวิทยฐานะ ว 9/2560 หลักเกณฑ์ 
