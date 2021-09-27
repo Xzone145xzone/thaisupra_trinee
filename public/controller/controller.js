@@ -38,6 +38,7 @@ function setval_immediate(val){
 
 
 function hide_immediate(ele) {
+
     $("#text_"+ele).html(val_immediate);  
     $("#ele_" + ele).hide();
     $("#text_" + ele).fadeIn();
@@ -96,4 +97,21 @@ function showinputmodal(){
              $('#span_modal').text('กรุณาระบุข้อมูลให้ครบถ้วน');
                 return false;
 }
+
+function convertdate(dates){
+    var data = new Date(dates);
+    var d = data.getDate();
+    var m = data.getMonth();
+    var y = data.getFullYear();
+    var thmonth = new Array ("มกราคม","กุมภาพันธ์","มีนาคม",
+"เมษายน","พฤษภาคม","มิถุนายน", "กรกฎาคม","สิงหาคม","กันยายน",
+"ตุลาคม","พฤศจิกายน","ธันวาคม");
+
+    return d+" "+thmonth[m]+" "+(y+543);
+}
+
+function month(){
+    
+}
+
 

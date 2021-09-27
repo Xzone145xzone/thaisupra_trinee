@@ -8,6 +8,8 @@ use App\Http\Controllers\PA2Controller;
 use App\Http\Controllers\PA3Controller;
 use App\Http\Controllers\PA4Controller;
 use App\Http\Controllers\PA5Controller;
+use App\Http\Controllers\Template1Controller;
+
 use App\Http\Middleware\UserSesstion;
 
 
@@ -115,8 +117,13 @@ use App\Http\Middleware\UserSesstion;
     //////////////////////////////////////////////////////////////////////////
     
     Route::get('PA5', [PA5Controller::class, 'PA5']);
-    Route::get('Template1', [PA5Controller::class, 'Template1']); 
+    //Route::get('Template1', [PA5Controller::class, 'Template1']); 
     
+    Route::get('document', [PA5Controller::class, 'document']);
+    
+    ///////////////////////////////////////////////////////////////////////////
+    
+   Route::get('Template1/{pages}', [Template1Controller::class, 'index']);
     
 });
 

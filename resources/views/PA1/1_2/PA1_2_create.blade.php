@@ -43,11 +43,7 @@
                     <th style="width:15%;"></th>
                 </tr>
                 <tr style="height:40px;">
-                    <td></td>
-                    <td></td> 
-                    <td></td>
-                     <td></td>
-                     <td></td>
+                    <td colspan="5" style="text-align:center;"> ไม่มีข้อมูล </td>
                 </tr>
                 <tr class="tr_footer" id="tbl_schedule">
                     <th colspan="3">สรุปชั่วโมงการปฏิบัติหน้าที่</th>
@@ -81,9 +77,8 @@
                     <th style="width: 10%;"></th>
                 </tr>
                 <tr style="height:40px;">
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                       <td colspan="3" style="text-align:center;"> ไม่มีข้อมูล </td>
+                  
                 </tr>
                 <tr class="tr_footer" id="tbl_support">
                     <th>สรุปชั่วโมงการปฏิบัติหน้าที่</th>
@@ -114,9 +109,7 @@
                     <th style="width: 10%;"></th>
                 </tr>
                 <tr style="height:40px;">
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                       <td colspan="3" style="text-align:center;"> ไม่มีข้อมูล </td>
                 </tr>
                 <tr class="tr_footer" id="tbl_develop">
                     <th>สรุปชั่วโมงการปฏิบัติหน้าที่</th>
@@ -147,9 +140,7 @@
                     <th style="width: 10%;"></th>
                 </tr>
                 <tr style="height:40px;">
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                     <td colspan="3" style="text-align:center;"> ไม่มีข้อมูล </td>
                 </tr>
                 <tr class="tr_footer" id="tbl_response">
                     <th>สรุปชั่วโมงการปฏิบัติหน้าที่</th>

@@ -154,6 +154,9 @@
                         <tr>
                             <th>วันที่บรรจุ</th>
                             <td>
+                                <input type="date" name="begin" 
+        placeholder="dd-mm-yyyy" value=""
+        min="1997-01-01" max="2030-12-31">
                                 <input type="date" value="" id="txtdatestarts" name="txtdatestarts" required>
                             </td>
                         </tr>

@@ -100,10 +100,19 @@ function update_field(fields) {
     var ids = $("#hdnid").val();
 
     
+    
     if ((!(values))) {
          return false; 
     }else{
-        setval_immediate(values);
+     
+        if((fields=="datestart")||(fields=="datebegin")||(fields=="dateacademic"))
+        {
+           var data = convertdate(values);
+           setval_immediate(data);  
+        }else{        
+           setval_immediate(values);
+        }
+        
         $.ajax({
             url: "/PA_1_update_field",
             type: "POST",
@@ -114,12 +123,14 @@ function update_field(fields) {
                 _token: _token
             },
             success: function (data) {
-                //setval_immediate(values);
+          
                 hide_immediate(fields); 
             }
         });
     }
 }
+
+
 
 
 function update_edu_field(ids, rowids, fields) {

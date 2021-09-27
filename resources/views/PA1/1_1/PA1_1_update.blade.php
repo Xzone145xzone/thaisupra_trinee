@@ -221,7 +221,7 @@
 
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <table class="tbl_data" border="0">
-                    <tr>
+                    <tr> 
                         <th>วันที่เริ่มรับราชการ</th>
                         <td>
 

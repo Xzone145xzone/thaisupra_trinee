@@ -24,8 +24,8 @@
     function add_train_edit() {
         $("#tbl_train").append('<tr id="tr_train_' + train + '">\n\
         <td style="width:25%;padding:0em;"><input type="text" style="text-align:center;width:90%;" class="form-control" id="txttrain" name="txtitrain[' + train + ']" required></td>\n\
-        <td style="padding:0em;width:15%;"><input type="date" style="text-align:center;width:90%;" class="form-control" id="txtstart_date" name="txtistart_date[' + train + ']"></td>\n\
-        <td style="padding:0em;width:15%;"><input type="date" style="text-align:center;width:90%;" class="form-control" id="txtend_date" name="txtiend_date[' + train + ']"></td>\n\
+        <td style="padding:0em;width:15%;"><input type="date" style="text-align:center;width:90%;" class="form-control" id="txtstart_date" name="txtistart_date[' + train + ']" required></td>\n\
+        <td style="padding:0em;width:15%;"><input type="date" style="text-align:center;width:90%;" class="form-control" id="txtend_date" name="txtiend_date[' + train + ']" required></td>\n\
         <td style="width:10%;padding:0em;"><input type="number" style="text-align:center;width:80%;" class="form-control" id="txtihour" name="txtihour[' + train + ']" required></td>\n\
         <td style="width:10%;"><input type="text" style="text-align:center;" class="form-control" id="txtiagency" name="txtiagency[' + train + ']" required></td>\n\
         <td style="text-align:center;width:20%;">\n\

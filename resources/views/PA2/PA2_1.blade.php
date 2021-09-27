@@ -229,7 +229,7 @@
         
         
         
-        <div>   
+<!--        <div>   
         
         <dl class="chart" style="--scale:100;width:70%;height:500px;">
   
@@ -295,7 +295,7 @@
   
 </dl>
 
-        </div>
+        </div>-->
 
     <center>
         <a class="btn_blue" href="{{url('PA2_2')}}"><li style="margin-right:10px;font-size: 18pt;" class="fa fa-arrow-circle-right "></li> แผนพัฒนาตนเอง</a> 

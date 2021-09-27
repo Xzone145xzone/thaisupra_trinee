@@ -13,12 +13,12 @@
                  @csrf
                         <div class="form-floating mb-3">
                             <label >Email address</label> <br><br>
-                            <input type="email" class="form-control"  id="email" name="email" placeholder="email">
-                        </div>
+                            <input type="email" class="form-control"  style="height:60px;" id="email" name="email" placeholder="email"> 
+                        </div> 
                         <div class="form-floating mb-3">
                             <label >Password</label>
                             <br><br>
-                            <input type="password"  class="form-control" id="password" name="password" placeholder="Password">
+                            <input type="password"  class="form-control" style="height:60px;" id="password" name="password" placeholder="Password">
                         </div>
                         <div class="d-grid">
                             <button class="btn btn-primary" type="submit" style="height: 50px;font-size: 14pt;">Login</button>

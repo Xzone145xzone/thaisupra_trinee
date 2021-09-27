@@ -115,7 +115,7 @@
                     </ul>
                     <div class="btn_sidebar"><a href="{{url('PA3')}}"><u>ส่วนที่ 3</u> การวิเคราะห์ประเด็นท้าทายในการพัฒนาผลลัพธ์การเรียนรู้ของผู้เรียน</a></div>
                     <div class="btn_sidebar"><a href="{{url('PA4')}}"><u>ส่วนที่ 4</u> แนวทางการพัฒนาและผลการพัฒนาผลลัพธ์การเรียนรู้ของผู้เรียนตามประเด็นท้าทาย</a></div>
-                    <!--                    <a class="btn_sidebar" href="{{url('PA5')}}" style="text-align:center;">ภาคผนวก</a>-->
+                                      <a class="btn_sidebar" href="{{url('PA5')}}" style="text-align:center;">ภาคผนวก</a>
 
                 </div>
             </div>

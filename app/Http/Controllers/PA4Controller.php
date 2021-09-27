@@ -144,7 +144,7 @@ class PA4Controller extends Controller {
                                         
         $headers = array(
         "Content-type"=>"text/html",
-        "Content-Disposition"=>"attachment;Filename=pa.doc"
+        "Content-Disposition"=>"attachment;Filename=issue.doc"
         );
                 
         $content = '<html>
