@@ -1,0 +1,84 @@
+    img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    img:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+    
+    
+    
+  .output{
+
+  box-shadow: 5px 10px 8px 10px #888888;
+  
+  width:100%;height: 1300px;background-color: white;margin:0.5em;padding:1em;
+  
+  
+}
+
+#template-right-side{
+    border: 1px solid #ccc;float: left;padding: 0.3em;height:1100px;overflow: scroll;
+}
+
+#template-left-side{
+    
+    width: 100%;
+    border: 1px solid #ccc;float: left;
+    padding:1em;
+    height: 1200px;
+    background-color:#cccccc;
+    overflow: scroll;
+    padding:3em;
+}
+
+#template-herder-side{
+    width: 100%;border: 1px solid #ccc;float: left;padding:1em;height:70px;padding: 1em;background-color:#F2F3F4;text-align: center;
+}   
+
+.div-pagination{
+    width:30%;
+    float: left;
+}
+
+.div-left{
+    width:30%;
+    float: left;
+    
+}
+
+.div-right{
+    width:40%;
+    float: left;
+    
+}
+
+.div-right div{
+    width: auto;
+}
+
+#btn-tem{
+    font-size: 16pt;border: 1px solid #d3d6d8;float: left;
+}
+
+#btn-tem li{
+    font-size: 18pt;
+}
+
+
+.div-pagination div{
+    float: left;vertical-align: top;
+    text-align: right;
+}
+
+
+   .panel{
+            font-family: 'Niramit', sans-serif;
+            font-size: 10pt;
+            padding: 3em;
+        }

@@ -70,7 +70,7 @@
                             <th colspan="5">ระดับความสามารถของนักเรียน</th>
                         </tr>
                         <tr class="tr_header_green">
-                            <th></th>
+                            <th colspan="2"></th>
                             <th style="width: 10%;">มากที่สุด</th>
                             <th style="width: 10%;">มาก</th>
                             <th style="width: 10%;">ปานกลาง</th>

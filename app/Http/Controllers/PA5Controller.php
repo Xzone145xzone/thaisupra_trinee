@@ -22,6 +22,7 @@ use App\pa_task;
 use App\pa_standard_development;
 use App\pa_evaluation;
 use App\pa_issue;
+use App\template;
 use Illuminate\Support\Facades\DB;
 use Session;
 use Input;
@@ -30,12 +31,13 @@ use App\pa_evaluation_answer;
 class PA5Controller extends Controller {
 
     public function PA5() {
-        return view("PA5.PA5_1");
+           $template = DB::table('template')
+                       ->get();
+           
+        return view("PA5.PA5",["template" => $template]);
     }
 
     public function Template1() {
-        //  return view("template.resolution");
-
         return view("template.template1.page2");
     }
 

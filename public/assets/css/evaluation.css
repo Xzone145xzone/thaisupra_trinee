@@ -12,6 +12,19 @@
 /*    vertical-align: top;*/
 }
 
+
+
+.table_evaluation_doc{  
+    width: 100%;
+    margin: 0 auto;
+}
+
+.table_evaluation_doc td{
+    text-align: center;
+    height: 60px;
+    border: 1px solid #ddd;
+}
+
 /*.tr_header_blue{
     padding: 0.2em;
 }*/
@@ -21,6 +34,14 @@
      text-align: center;
     background-color:#1050A2;
     color:white;
+    
+}
+
+
+.tr_header_tranparent th{
+text-align: center;
+background-color: #F2F3F4;
+
     
 }
 
@@ -38,6 +59,20 @@
      padding: 0.5em;
 }
 
+.tr_header_gray{
+    background-color: #CCD1D1;
+    color:black;
+    padding: 0.5em;
+   
+}
+
+.tr_header_gray th{
+     text-align: center;
+     vertical-align: top;
+     padding: 0.5em;
+}
+
+
 
 .td_hover{
     font-size: 25pt;
@@ -49,3 +84,10 @@
     background-color:#40E0D0;
  
 }
+
+
+ .panel{
+            font-family: 'Niramit', sans-serif;
+            font-size: 10pt;
+            padding: 2em;
+        }

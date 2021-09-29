@@ -140,6 +140,7 @@ class PA4Controller extends Controller {
         
                 $issue = DB::table('pa_issue')
                 ->where('id',$request->id)
+                ->where('PA_year', PA_year())         
                 ->first();
                                         
         $headers = array(

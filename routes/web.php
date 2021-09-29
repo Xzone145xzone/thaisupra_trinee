@@ -123,7 +123,8 @@ use App\Http\Middleware\UserSesstion;
     
     ///////////////////////////////////////////////////////////////////////////
     
-   Route::get('Template1/{pages}', [Template1Controller::class, 'index']);
-    
+   Route::get('Template1/{pages}', [TemplateController::class, 'loadpage']);
+   Route::get('coverpage/{pages}', [TemplateController::class, 'coverpage']);   
+   Route::get('graphic/{pages}', [TemplateController::class, 'graphic']);
 });
 
