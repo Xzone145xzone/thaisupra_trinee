@@ -10,7 +10,7 @@
             background-size: 100% 100%;
             width: 100%;
             height:100%;
-            background-image:url({{url("/storage/template/template01/firstpage.gif")}});
+            background-image:url("/storage/template/template01/firstpage.gif");
 /*            background-color: red;*/
         }
     </style>

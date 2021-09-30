@@ -8,7 +8,7 @@ use App\Http\Controllers\PA2Controller;
 use App\Http\Controllers\PA3Controller;
 use App\Http\Controllers\PA4Controller;
 use App\Http\Controllers\PA5Controller;
-use App\Http\Controllers\Template1Controller;
+use App\Http\Controllers\TemplateController;
 
 use App\Http\Middleware\UserSesstion;
 

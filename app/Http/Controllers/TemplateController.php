@@ -27,7 +27,7 @@ use Session;
 use Input;
 use App\pa_evaluation_answer;
 
-class Template1Controller extends Controller {
+class TemplateController extends Controller {
 
 
 
@@ -139,7 +139,7 @@ class Template1Controller extends Controller {
                      "development" => $development,
                      "task" => $task,
                      "topic1" => $topic1,
-                      "topic2" => $topic2,
+                     "topic2" => $topic2,
 //                     "topic_model"=>$topic_model,
                      "response_hour" => $response_hour])
                     ->withModel($pa_standard);
