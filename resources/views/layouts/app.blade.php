@@ -43,9 +43,10 @@
         <link href="{{ asset('assets/css/evaluation.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/css/template.css') }}" rel="stylesheet">
         <script src="{{asset('/storage/controller/element.js')}}"></script> 
+         <script src="{{asset('assets/polygon/polygon.js')}}"></script> 
     </head>
     <body>
-        @include('layouts.extend')
+      
         <nav class="navbar navbar-expand-lg fixed-top" id="TopNav" style="background-color: #00061B;">
             <div class="container px-4">
                 <div class="navbar-brand">
@@ -55,16 +56,7 @@
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span style="color:white;" class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        @if(session('uAuth'))                        
-                        <li  class="btn_nav"><a class="nav-link">ภาษาไทย</a></li>
-                        <li  class="btn_nav"><a class="nav-link">สนับสนุนมูลนิธิ</a></li>
-                        <li  class="btn_nav"><a class="nav-link" href="{{url('logout')}}">ออกจากระบบ</a></li>
-                        @else
-                        <li  class="btn_nav"><a class="nav-link" href="#contact">สมัครสมาชิก</a></li>
-                        <li  class="btn_nav"><a class="nav-link" href="{{url('/')}}">เข้าสู่ระบบ</a></li>
-                        @endif
-                    </ul>
+                    
                 </div>
             </div>
         </nav>
@@ -90,13 +82,13 @@
 
         <div class="d-flex" id="wrapper">
 
-            @if(session('uAuth'))
+      
             <div class="border-end bg-white" id="sidebar-wrapper" >
                 <div class="btn_sidebar_active">
                     <table border='0'>
                         <tr>
                             <td style="width:80px;">
-                                <img  src="{{ asset('logo/logo.png') }}" style="width:70px;margin: 0.2em;border:0;">
+                                <img  src="/logo/logo.png" style="width:70px;margin: 0.2em;border:0;">
                             </td>
                             <td style="padding:0em;">
                                 ข้อตกลงในการพัฒนางานสำหรับครู <span style="font-size: 10pt;">(Performance Agreement){{PA_year()}}</span>
@@ -105,56 +97,17 @@
                     </table>
 
                 </div>
-                <div class="list-group list-group-flush" style="width:250px;">
-                    <div class="btn_sidebar" onclick="menu_toggle('dropdown_1');"><a><u>ส่วนที่ 1</u> ข้อมูลผู้จัดทำข้อตกลงในการพัฒนางาน <i class="fa fa-caret-down" aria-hidden="true"></i></a></div>
-                    <ul id="dropdown_1" class="dropdown" style="display: none;">
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{{url('PA1_1')}}">ข้อมูลทั่วไป</a></li>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{{url('PA1_2')}}">ภาระงานตามที่ กคศ.กำหนด</a></li>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{{url('PA1_3')}}">ประเภทห้องเรียนที่จัดการเรียนรู้</a></li>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{{url('PA1_4')}}">การอบรมและพัฒนาตนเอง</a></li>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{{url('PA1_5')}}">สื่อการเรียนรู้และนวัตกรรม</a></li>
-                    </ul>
-                    <div class="btn_sidebar" onclick="menu_toggle('dropdown_2');"><a><u>ส่วนที่ 2</u> ผลการประเมินงานตามมาตรฐานตำแหน่งและภาระงานตามที่ ก.ค.ศ.กำหนด <i class="fa fa-caret-down" aria-hidden="true"></i></a></div>
-                    <ul id="dropdown_2" class="dropdown" style="display: none;">
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{{url('PA2_1')}}">ผลการประเมิน</a></li>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{{url('PA2_2')}}">แผนการพัฒนาตนเอง</a></li>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{{url('PA2_3')}}">งานที่ปฏิบัติตามมาตรฐานตำแหน่ง</a></li>
-                    </ul>
-                    <div class="btn_sidebar"><a href="{{url('PA3')}}"><u>ส่วนที่ 3</u> การวิเคราะห์ประเด็นท้าทายในการพัฒนาผลลัพธ์การเรียนรู้ของผู้เรียน</a></div>
-                    <div class="btn_sidebar"><a href="{{url('PA4')}}"><u>ส่วนที่ 4</u> แนวทางการพัฒนาและผลการพัฒนาผลลัพธ์การเรียนรู้ของผู้เรียนตามประเด็นท้าทาย</a></div>
-                                      <a class="btn_sidebar" href="{{url('PA5')}}" style="text-align:center;">ภาคผนวก</a>
-
-                </div>
+               
             </div>
-            @endif
+          
 
             <div id="page-content-wrapper">
-                @if(session('uAuth'))
-                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" >
-                    <div class="container">
-                        <button class="btn btn-primary" id="sidebarToggle"><li class="fa fa-bars" title="toggle"></li></button>
-                    </div>
-                </nav>
-                @endif
+               
 
 
                 @yield('content')
 
-                <div class="modal fade" id="myModal" role="dialog">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">!มีบางอย่างไม่ถูกต้อง</h4>
-                            </div>
-                            <div class="modal-body">
-                                <span id="span_modal"></span>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" id="close" class="btn btn-primary" data-dismiss="modal" onclick="close_modal();" aria-label="Close">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            
             </div>
         </div>
 

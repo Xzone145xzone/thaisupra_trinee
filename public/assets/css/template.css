@@ -17,7 +17,7 @@
 
   box-shadow: 5px 10px 8px 10px #888888;
   
-  width:100%;height: 1300px;background-color: white;margin:0.5em;padding:1em;
+  width:100%;height: 100%;background-color: white;padding:0.5em;overflow: scroll;
   
   
 }
@@ -30,11 +30,11 @@
     
     width: 100%;
     border: 1px solid #ccc;float: left;
-    padding:1em;
+    margin: 0 auto;
     height: 1200px;
     background-color:#cccccc;
-    overflow: scroll;
-    padding:3em;
+    overflow: scroll; padding:1em;
+  
 }
 
 #template-herder-side{
@@ -82,3 +82,8 @@
             font-size: 10pt;
             padding: 3em;
         }
+        
+            .tem_pagination{
+        width:auto;
+        float: left;
+    }

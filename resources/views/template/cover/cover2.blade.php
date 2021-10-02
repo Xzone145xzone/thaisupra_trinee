@@ -19,9 +19,8 @@
          <div style="height: 40%;">
         </div>
         <div style="height: 30%;text-align: right;padding-top:0em;padding-right: 2em;">
-           
-            <h2>{{$Profile->firstname}} {{$Profile->lastname}}</h2>
-            ตำแหน่ง {{$Profile->position}} {{$Profile->academic}}
+          <h2>นายอัษฏาวุฒิ เหลืองสุนธร</h2>
+            ตำแหน่ง ครู ครูผู้ช่วยชำนาญการ
         </div>
         
     </div>
